@@ -1,0 +1,2 @@
+# jot
+javascript object toolkit
