@@ -3,15 +3,15 @@ import RetryManager4Javascript from './retryManager4Javascript';
 
 class AopConfigParameters {
     constructor(
-            objectReference,
-            methodName,
-            beforeCallback,
-            afterCallback,
-            exceptionCallback,
-            finallyCallback,
-            wrapperCallback,
-            mustUseRetryManager
-            ) {
+        objectReference,
+        methodName,
+        beforeCallback,
+        afterCallback,
+        exceptionCallback,
+        finallyCallback,
+        wrapperCallback,
+        mustUseRetryManager
+    ) {
         this.objectReference = objectReference || window;
         this.methodName = methodName || '<unknown>';
         this.beforeCallback = beforeCallback || false;
@@ -20,8 +20,8 @@ class AopConfigParameters {
         this.finallyCallback = finallyCallback || false;
         this.wrapperCallback = wrapperCallback || false;
         this.mustUseRetryManager = mustUseRetryManager || false;
-        this.methodReference = () => {};
-        
+        this.methodReference = () => { };
+
         if (this.mustUseRetryManager) {
             this.setRetryManager();
         }
@@ -31,11 +31,11 @@ class AopConfigParameters {
         configuration = configuration || new RetryManagerConfiguration();
         this.retryManager = new RetryManager4Javascript(configuration);
     }
-    
-    setMethodReference(methodName, surrounderMethod){
+
+    setMethodReference(methodName, surrounderMethod) {
         if (!!this.objectReference.prototype
             && this.objectReference.prototype[methodName] instanceof Function
-            ) {
+        ) {
             this.methodReference = this.objectReference.prototype[methodName];
             this.objectReference.prototype[methodName] = surrounderMethod.bind(this);
         }
@@ -47,13 +47,13 @@ class AopConfigParameters {
 
     execMethodReference(argumentsCall) {
         let result = undefined;
-        
+
         if (!!this.objectReference) {
             result = this.methodReference.apply(this.objectReference, argumentsCall);
         } else {
             result = this.methodReference.apply(window, argumentsCall);
         }
-        
+
         return result;
     }
 
