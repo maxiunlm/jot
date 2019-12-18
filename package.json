@@ -1,0 +1,9 @@
+{
+  "name": "jot",
+  "version": "0.1.0",
+  "description": "Javascript Object Toolkit",
+  "main": "index.js",
+  "repository": "https://github.com/maxiunlm/jot",
+  "author": "Maximiliano Augusto Gauna",
+  "license": "https://github.com/maxiunlm/jot/blob/master/LICENSE"
+}
