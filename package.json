@@ -1,9 +1,29 @@
 {
   "name": "jot",
   "version": "0.1.0",
+  "version_short": "0.1",
   "description": "Javascript Object Toolkit",
   "main": "index.js",
-  "repository": "https://github.com/maxiunlm/jot",
+  "keywords": [
+    "ioc",
+    "aop",
+    "mapper",
+    "retry",
+    "manager",
+    "retryManager",
+    "javascript",
+    "toolkit",
+    "objects",
+    "object"
+  ],
+  "homepage": "https://github.com/maxiunlm/jot/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxiunlm/jot.git"
+  },
   "author": "Maximiliano Augusto Gauna",
-  "license": "https://github.com/maxiunlm/jot/blob/master/LICENSE"
+  "contributors": [
+    "..."
+  ],
+  "license": "MIT"
 }
