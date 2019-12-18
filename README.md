@@ -18,5 +18,7 @@ A Javascript Object Toolkits.
 ## Tests
 
   `npm test`
+
   or
+  
   `yarn test`

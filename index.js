@@ -1,5 +1,4 @@
 import IoC4Javascript from './js/dist/ioc4javascript'
-import AopConfigParameters from './js/dist/aopConfigParameters';
 import RetryManager4Javascript from './js/dist/retryManager4Javascript';
 
 class Jot {
