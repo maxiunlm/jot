@@ -1,4 +1,4 @@
-# JOT
+# JOT (Under Consruction!)
 
 A Javascript Object Toolkits.
 
