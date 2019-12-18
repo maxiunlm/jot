@@ -1,2 +1,2 @@
-# jot
-javascript object toolkit
+# JOT
+## Javascript Object Toolkit
